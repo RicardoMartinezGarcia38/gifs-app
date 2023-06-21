@@ -3,8 +3,8 @@
   <hr class="text-white">
 
   <div class="list-group list-reset">
-<button class="list-group-item list-group-action">
-  Odio Valorant
+<button *ngFor="let tag of tags" class="list-group-item list-group-action">
+  {{ tag | titlecase }}
 </button>
 
   </div>
